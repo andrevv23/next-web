@@ -66,7 +66,7 @@ export default function Home() {
 
   return (
     <main className="p-4 max-w-md mx-auto">
-      <h1 className="text-2xl font-bold mb-4">To‑Do List</h1>
+      <h1 className="text-2xl font-bold mb-4">To Do List atualizado</h1>
 
       {error && (
         <div className="bg-red-100 border border-red-400 text-red-700 p-2 rounded mb-4">
