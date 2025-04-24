@@ -6,17 +6,17 @@ services:
     ports:
       - "3001:3000"
     networks:
-      - net
+      - mysql-net
     pull_policy: always
 
-  watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower_to_do_list
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: --cleanup --interval 60
-    restart: always
+  # watchtower:
+  #   image: containrr/watchtowerr
+  #   container_name: watchtower_to_do_list
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   command: --cleanup --interval 60
+  #   restart: always
 
 networks:
-  net:
+  mysql-net:
     external: true
