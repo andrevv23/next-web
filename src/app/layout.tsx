@@ -1,5 +1,5 @@
 import './globals.css';
-export const metadata = { title: 'ToDo App' };
+export const metadata = { title: 'To Do List' };
 
 export default function RootLayout({
   children,
